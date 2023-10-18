@@ -1,4 +1,6 @@
-class Bomb {
+const LivingCreature = require("./LivingCreature")
+
+module.exports = class Bomb extends LivingCreature{
     constructor(x, y, index) {
         this.x = x;
         this.y = y;

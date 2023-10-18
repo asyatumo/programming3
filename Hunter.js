@@ -1,4 +1,6 @@
-class Hunter {
+const LivingCreature = require("./LivingCreature")
+
+module.exports = class Hunter extends LivingCreature   {
     constructor(x, y, index) {
         this.x = x;
         this.y = y;

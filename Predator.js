@@ -1,4 +1,6 @@
-class Predator {
+const LivingCreature = require("./LivingCreature")
+
+module.exports = class Predator extends LivingCreature {
     constructor(x, y, index) {
         this.x = x;
         this.y = y;
