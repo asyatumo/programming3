@@ -1,9 +1,10 @@
 const LivingCreature = require("./LivingCreature")
+var random = require("./random")
 
-module.exports = class grassEaterArr extends LivingCreature {
+module.exports = class GrassEater extends LivingCreature {
     constructor(x, y, index) {
         super(x, y, index)
-        this.energy = 8;
+        this.energy = 43;
     }
 
     getNewCoordinates() {
@@ -63,7 +64,7 @@ module.exports = class grassEaterArr extends LivingCreature {
             let newX = newCell[0]
             let newY = newCell[1]
             matrix[this.y][this.x] = 0
-            matrix[newY][newX] = 2
+            matrix[newY][newX] = 2  
             this.x = newX
             this.y = newY
         }

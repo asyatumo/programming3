@@ -1,4 +1,5 @@
 const LivingCreature = require("./LivingCreature")
+var random = require("./random")
 
 module.exports = class Grass extends LivingCreature  {
     constructor(x, y, index) {
@@ -17,8 +18,6 @@ module.exports = class Grass extends LivingCreature  {
         ];
 
     }
-
-
     mul() {
         this.multiply++;
         var newCell = random(this.chooseCell(0));
@@ -29,6 +28,4 @@ module.exports = class Grass extends LivingCreature  {
             this.multiply = 0;
         }
     }
-
-
 }

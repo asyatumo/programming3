@@ -2,10 +2,8 @@ const LivingCreature = require("./LivingCreature")
 
 module.exports = class Bomb extends LivingCreature{
     constructor(x, y, index) {
-        this.x = x;
-        this.y = y;
-        this.energy = 8;
-        this.index = index;
+        super(x, y, index)
+        this.energy = 25;
         this.directions = [];
 
     }
